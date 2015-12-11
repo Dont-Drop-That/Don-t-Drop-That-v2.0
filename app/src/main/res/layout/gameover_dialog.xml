@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/dialog_corner">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/youscore"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="50sp"
+            android:id="@+id/score"
+            android:textColor="#ff0000"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@+id/layout"
+        android:layout_marginTop="20dp"
+        android:id="@+id/gameover_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/win"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/gameover_pic"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/restart"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="restart"
+            android:background="@drawable/register_btn"
+            android:textColor="#6d6d6d"
+            android:layout_marginRight="15dp"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="exit"
+            android:background="@drawable/login_btn"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
